@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Giá hoa quả</h2>
+    <select id="hoaqua">
+        <option value="oi">Ổi</option>
+        <option value="duahau">Dưa hấu</option>
+        <option value="tao">Táo</option>
+        <option value="xoai">Xoài</option>
+        <option value="cam">Cam</option>
+        <option value="chomchom">Chôm chôm</option>
+        <option value="mangcut">Măng cụt</option>
+    </select>
+    <button onclick="checkGia()">Xem giá</button><br>
+    <br>
+    <div id="gia">0</div>
+    <script>
+        function checkGia() {
+            let hoaqua = document.getElementById("hoaqua");
+            let giaQua = document.getElementById("gia");
+            switch (hoaqua.value) {
+                case "oi":
+                    price = "20000 VNĐ/kg";
+                    break;
+                case "duahau":
+                    price = "20000 VNĐ/kg";
+                    break;
+                case "tao":
+                    price = "30000 VNĐ/kg";
+                    break;
+                case "xoai":
+                    price = "30000 VNĐ/kg";
+                    break;
+                case "cam":
+                    price = "40000 VNĐ/kg";
+                    break;
+                case "chomchom":
+                    price = "40000 VNĐ/kg";
+                    break;
+                case "mangcut":
+                    price = "50000 VNĐ/kg";
+                    break;
+            }
+            giaQua.innerText = price;
+
+        }
+    </script>
+</body>
+
+</html>
